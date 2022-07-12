@@ -1,12 +1,11 @@
 {
-  "private": "true",
+  "packageManager": "yarn@3.2.1",
   "name": "prj-mern01",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start-fe": "yarn workspace frontend start",
-    "start-be": "yarn workspace backend start"
+    "start": "yarn workspaces foreach -pi run start"
   },
   "workspaces": [
     "frontend",
