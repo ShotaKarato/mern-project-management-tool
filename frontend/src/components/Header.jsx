@@ -4,10 +4,10 @@ import logo from "./assets/logo.png";
 
 const Header = () => {
   return (
-    <nav className="navbar bg-light mb-4 p-0">
+    <nav className="navbar-brand bg-light mb-4 p-0">
       <div className="container">
-        <Link to="">
-          <div className="d-flex">
+        <Link to="/" className="navbar-link">
+          <div className="d-flex align-item-center">
             <img src={logo} alt="logo" className="mr-2" />
             <div>ProjectMgmt</div>
           </div>

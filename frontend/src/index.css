@@ -21,6 +21,11 @@ code {
   margin-right: 10px;
 }
 
+.navbar-link {
+  color: #df3ca6;
+  text-decoration: none;
+}
+
 .btn {
   font-size: 15px;
 }

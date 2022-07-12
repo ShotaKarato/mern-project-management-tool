@@ -33,10 +33,7 @@ const MutationType = new GraphQLObjectType({
         },
         clientId: { type: new GraphQLNonNull(GraphQLID) },
       },
-      resolve: async (
-        _,
-        { project: { name, description, status, clientId } }
-      ) => {
+      resolve: async (_, { name, description, status, clientId }) => {
         const project = new Project({ name, description, status, clientId });
         return await project.save();
       },
